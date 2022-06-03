@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script defer src="js/chart.js"></script>
+    <script defer src="js/script.js"></script>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évolution des prix de l'essence</title>
+</head>
+<body>
+    <select name="" id="monnaies">
+    <option value="">Default</option>
+    </select>
+
+    <select name="" id="etats">
+    <option value="PET.EMM_EPM0_PTE_SNY_DPG.M">New York</option>
+    <option value="PET.EMM_EPM0_PTE_SCA_DPG.M">Californie</option>
+    <option value="PET.EMM_EPM0_PTE_SFL_DPG.M">Floride</option>
+    <option value="PET.EMM_EPM0_PTE_SCO_DPG.M">Colorado</option>
+    <option value="PET.EMM_EPM0_PTE_SMA_DPG.M">Massachusetts</option>
+    <option value="PET.EMM_EPM0_PTE_STX_DPG.M">Texas</option>
+</select>
+<br>
+<br>
+<label for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start">
+
+
+       <label for="end">End date:</label>
+
+<input type="date" id="end" name="trip-end">
+
+
+       <br>
+       <br>
+       <div id="canva">
+        <canvas id="myChart" width="400" height="400"></canvas>
+
+
+       </div>
+       
+</body>
+</html>
